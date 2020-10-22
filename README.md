@@ -17,3 +17,6 @@ My take on what the Spotify should develop and implement into its UX and functio
 ## Where to View This Bad Boy??
 
 Will be hosted on Firebase!!
+
+## Commit Message Syntax??
+Using "feat(*component*): message" or "fix(*component*): message"
