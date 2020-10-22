@@ -14,3 +14,6 @@ My take on what the Spotify should develop and implement into its UX and functio
 - Entire REACT Tech Stack
 
 
+## Where to View This Bad Boy??
+
+Will be hosted on Firebase!!
