@@ -20,3 +20,12 @@ Will be hosted on Firebase!!
 
 ## Commit Message Syntax??
 Using "feat(*component*): message" or "fix(*component*): message"
+
+## Data Layer
+1. App
+    - Player
+        - Sidebar
+        - Header
+    - Login
+
+A Context API is a stack that pushes every prop so that we could access any prop in constant time
