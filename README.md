@@ -29,3 +29,7 @@ Using "feat(*component*): message" or "fix(*component*): message"
     - Login
 
 A Context API is a stack that pushes every prop so that we could access any prop in constant time
+
+## Debugging Practices for Console Log
+1. EMOJIS
+2. Parameters Taking in Objects

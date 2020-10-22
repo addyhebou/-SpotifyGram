@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Player from "./components/Player";
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from "spotify-web-api-js";
+import { useDataLayerValue } from "./DataLayer";
 
 const spotify = new SpotifyWebApi();
 
@@ -11,8 +12,9 @@ function App() {
   // State is short term memory for handling variables
   // Disappears when page refreshes
   const [token, setToken] = useState(null)
+  const [{}, dispatch] = useDataLayerValue();
 
-  // Run code based on a given condition
+  // useEffect: Run code based on a given condition
   useEffect(() => {
     const hash = getTokenFromUrl();
     window.location.hash = "";
