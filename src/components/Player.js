@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from './Sidebar';
+import Body from './Body.tsx';
+import "../Player.css";
+import "../Sidebar.css";
 
-function Player() {
+function Player({ spotify }) {
     return (
-        <div>
-            <h1>Welcome to spotify</h1>
+        <div className = "player">
+            <div className = "player_body">
+                <Sidebar/>
+                <Body/>
+            </div>
+            
+            {/* Footer */}
+
         </div>
     )
 }
