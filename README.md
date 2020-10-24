@@ -13,6 +13,8 @@ My take on what the Spotify should develop and implement into its UX and functio
 - React Hooks Functional (Hooks, State)
 - Entire REACT Tech Stack
 
+Languages include: Typescript, CSS, JSX
+
 
 ## Where to View This Bad Boy??
 
