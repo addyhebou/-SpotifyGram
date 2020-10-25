@@ -32,13 +32,17 @@ function App() {
           user: user,
         })
       });
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({ // pop the token (userID) in to the DataLayer, meaning adding the user to the DataLayer
+          type: "SET_PLAYLISTS", // sends SET_USER to reducer.js
+          playlists: playlists,
+        });
+      });
+
     }
 
-    console.log('I HAVE A TOKEN: 🔥', token);
   }, []);
-
-  console.log("💪🏿💪🏿💪🏿", user);
-  console.log("👽👽", token);
 
   return (
     <div className="app">

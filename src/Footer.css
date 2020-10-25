@@ -1,9 +1,32 @@
 .footer{
     background-color: #282828;
     bottom: 0;
+    display: flex;
     height: 65px;
+    justify-content: space-between;
     padding: 20px;
     position: fixed;
-    width: 100%;
+    width: 97%;
 }
 
+.footer_left{
+    flex: 0.3;
+}
+
+.footer_center{
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex: 0.4;
+    max-width: 300px;
+    padding: 0 100px;
+    
+}
+
+.footer_right{
+    align-items: center;
+    display: flex;
+    flex: 0.3;
+    justify-content: space-between;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../SidebarOption.css";
 
-function SidebarOption({ title, Icon }) {
+function SidebarOption({ title, Icon } : {title:string, Icon:any}) {
     return (
         <div className = "sidebarOption">
             {Icon && <Icon className = "sidebarOption_icon"/>}
