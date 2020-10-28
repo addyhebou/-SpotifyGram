@@ -15,7 +15,7 @@
     "react-scripts": "^3.4.4",
     "spotify-web-api-js": "^1.5.0"
   },
-  "homepage": "http://localhost:3000/",
+  "homepage": "https://new-spotify-clone.web.app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

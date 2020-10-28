@@ -17,8 +17,8 @@ function Body({ spotify }) {
             <div className = "body_info">
                 <img src = {discover_weekly?.images[0].url} /* {user?.images[0]?.url} */ alt = ""/>
                 <div className = "body_infoText">
-                    <strong>PLAYLIST</strong>
-                    <h2>Discover Weekly</h2>
+                    <strong>DID FIREBASE UPDAT</strong>
+                    <h2>FIREBASE UPDATE PLEASE</h2>
                     <p>{discover_weekly?.description}</p>
                 </div>
             </div>
