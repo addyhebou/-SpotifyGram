@@ -1,4 +1,3 @@
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCYRTRIZo288vAMwFjG1ICxygZoussr7A0",
     authDomain: "new-spotify-clone.firebaseapp.com",
@@ -8,4 +7,3 @@ const firebaseConfig = {
     messagingSenderId: "639929147593",
     appId: "1:639929147593:web:377367c800327b243f2d18"
   };
- 
