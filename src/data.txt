@@ -5,5 +5,5 @@ left off at 3:11:03
 Youtube Vid: https://www.youtube.com/watch?v=pnkuI8KXW_8&t=2450s
 
 rfce to build components
-
+ 
 cd Desktop/\#SpotifyGram && npm start
