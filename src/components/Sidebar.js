@@ -5,6 +5,13 @@ import SearchIcon from '@material-ui/icons/Search';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import SidebarOption from './SidebarOption.tsx';
 import { useDataLayerValue } from "../DataLayer";
+import 'semantic-ui-css/semantic.min.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 function Sidebar() {
     const [{ playlists }, dispatch] = useDataLayerValue();
@@ -15,7 +22,8 @@ function Sidebar() {
             <SidebarOption title="Home" Icon={HomeIcon}/>
             <SidebarOption title="Search" Icon={SearchIcon}/>
             <SidebarOption title="Your Library" Icon={LibraryMusicIcon}/>
-            
+            <SidebarOption title="Trending" Icon={LibraryMusicIcon}/>
+
             <br/>
             <strong className = "sidebar_title">PLAYLISTS</strong>
             <hr/>
@@ -27,6 +35,7 @@ function Sidebar() {
             <SidebarOption title="Pop" />
             <SidebarOption title="Dance" />
         </div>
+        
     );
 }
 

@@ -6,16 +6,18 @@ import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import SongRow from "../components/SongRow";
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
   } from "react-router-dom";
-
 
 function Body({ spotify }) {
     const [{ user, discover_weekly }, dispatch] = useDataLayerValue();
+    
 
     return (
         <div className="body">
@@ -23,8 +25,8 @@ function Body({ spotify }) {
             <div className = "body_info">
                 <img src = {discover_weekly?.images[0].url} /* {user?.images[0]?.url} */ alt = ""/>
                 <div className = "body_infoText">
-                    <strong>PLAYLIST</strong>
-                    <h2>Discover Weekly</h2>
+                    <strong>TRENDING</strong>
+                    <h2>TRENDING</h2>
                     <p>{discover_weekly?.description}</p>
                 </div>
             </div>

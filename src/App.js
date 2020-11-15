@@ -5,6 +5,13 @@ import Player from "./components/Player";
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "./DataLayer";
+// import { Router } from '@material-ui/icons';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const spotify = new SpotifyWebApi();
 
@@ -44,26 +51,35 @@ function App() {
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
-
         });
       });
-
     }
-
   }, []);
 
   return (
-    <div className="app">
-      {
-        token ? ( // If there is a token
-          // console.log("OH LETS DO IT");
-          <Player spotify={spotify}/>
-        ) : ( // Else if there is no token
-          <Login />
-        )
-      }
-    </div>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/">
+            {token ? (<Player spotify={spotify}/>) : (<Login />)}
+          </Route>
+          <Route path = "/trending">
+            <h1 style={{color: "red"}}>Trending Boyyyyy</h1>
+            console.log("💚💚💚💚💚")
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
+}
+{
+  // React-Router
+}
+{
+  // localhost.com
+}
+{
+  // localhost.com/trending
 }
 
 export default App;

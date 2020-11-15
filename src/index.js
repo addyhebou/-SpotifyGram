@@ -5,6 +5,7 @@ import App from './App';
 import { DataLayer } from './DataLayer';
 import reducer, { initialState } from './reducer';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,12 @@ ReactDOM.render(
       <App />
     </DataLayer>
   </React.StrictMode>,
+  // <BrowserRouter>
+  //   <div>
+  //     <Route component = {App}/>
+  //     <Route path='/home' render={() => <h1>Hello</h1>} />
+  //   </div>
+  // </BrowserRouter>,
   document.getElementById('root')
 );
 
