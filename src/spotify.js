@@ -1,10 +1,7 @@
-
-
-
 export const authEndpoint = 
 "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "http://www.localhost:3000/";
 const clientId = "c8b5d20bd8bf4e64b2e4bb2c52194a08";
 
 
@@ -30,4 +27,17 @@ export const getTokenFromUrl = () => {
         }, {}); 
 }
 
-export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
+export const loginUrl = 
+`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
+/* 
+https://accounts.spotify.com/authorize
+?
+client_id=
+c8b5d20bd8bf4e64b2e4bb2c52194a08
+&redirect_uri=
+http://www.localhost:3000/
+&scope=
+user-read-currently-playing%20user-read-recently-played%20user-read-playback-state%20user-top-read%20user-modify-playback-state
+&response_type=token&show_dialog=true
+
+*/

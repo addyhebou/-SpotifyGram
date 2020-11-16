@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Login from "./components/Login";
 import Player from "./components/Player";
+import Trending from "./components/Trending.js";
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "./DataLayer";
@@ -60,12 +61,13 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/">
+          <Route path="/home">
             {token ? (<Player spotify={spotify}/>) : (<Login />)}
+            {console.log("💜💜💜💜💜💜")}
           </Route>
           <Route path = "/trending">
-            <h1 style={{color: "red"}}>Trending Boyyyyy</h1>
-            console.log("💚💚💚💚💚")
+            {token ? (<Trending spotify={spotify}/>) : (<Login />)}
+            {console.log("💚💚💚💚💚")}
           </Route>
         </Switch>
       </div>

@@ -19,10 +19,14 @@ function Sidebar() {
     return (
         <div className = "sidebar">
             <img className = "sidebar_logo" src = "http://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" alt = "Spotify Icon"></img>
-            <SidebarOption title="Home" Icon={HomeIcon}/>
+            <Link to="/home">
+                <SidebarOption title="Home" Icon={HomeIcon}/>
+            </Link>
             <SidebarOption title="Search" Icon={SearchIcon}/>
             <SidebarOption title="Your Library" Icon={LibraryMusicIcon}/>
-            <SidebarOption title="Trending" Icon={LibraryMusicIcon}/>
+            <Link to="/trending">
+                <SidebarOption title="Trending" Icon={LibraryMusicIcon}/>
+            </Link>
 
             <br/>
             <strong className = "sidebar_title">PLAYLISTS</strong>

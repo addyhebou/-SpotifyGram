@@ -15,34 +15,42 @@ import {
 
 function Player({ spotify }) {
     return (
-        <Router>
-            <Switch>
-                <Route path="/">
-                    {console.log("💜💜💜💜💜💜")}
-                    <div className = "player">
-                        <div className = "player_body">
-                            <Sidebar />
-                            <Body spotify={spotify}/>
-                        </div>
-                        <Footer />
-                    </div>    
-                </Route>
-                <Route path="/trending">
-                    <h1>Hello</h1>
-                    {console.log("💚💚💚💚💚💚")}
-                    <div className = "player">
-                        <div className = "player_body">
-                            <Sidebar />
-                            <Trending spotify={spotify}/>
-                        </div>
-                        <Footer />
-                    </div>    
-                </Route>
-            </Switch>
-        </Router>
-        
-        
+        <div className = "player">
+            {console.log("💜💜💜💜💜💜")}
+            <div className = "player_body">
+                <Sidebar />
+                <Body spotify={spotify}/>
+            </div>
+            <Footer />
+        </div>     
     )
 }
 
 export default Player;
+
+
+    //     // <Router>
+    //         // {/* <Switch> */}
+    //             // {/* <Route path="/"> */}
+    //             {console.log("💜💜💜💜💜💜")}
+    //             <div className = "player">
+    //                 <div className = "player_body">
+    //                     <Sidebar />
+    //                     <Body spotify={spotify}/>
+    //                 </div>
+    //                 <Footer />
+    //             </div>    
+    //         {/* </Route> */}
+    //         {/* <Route path="/trending">
+    //             <h1>Hello</h1>
+    //             {console.log("💚💚💚💚💚💚")}
+    //             <div className = "player">
+    //                 <div className = "player_body">
+    //                     <Sidebar />
+    //                     <Trending spotify={spotify}/>
+    //                 </div>
+    //                 <Footer />
+    //             </div>    
+    //         </Route> */}
+    //     {/* </Switch> */}
+    // {/* </Router> */}
