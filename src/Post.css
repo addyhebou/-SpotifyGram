@@ -1,0 +1,25 @@
+.bottomline{
+    display: flex;
+}
+
+.holder{
+    background-color: #444444;
+    border-radius: 25px;
+    padding: 9px;
+    width: 328px;
+}
+
+.topline{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.topline img{
+    clip-path: circle(40%);
+}
+
+.topline > img{
+    width: 68px;
+    height: 68px;
+    /* transform: scale(.5); */
+}

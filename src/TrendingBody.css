@@ -59,3 +59,7 @@
 .body_songs{
     margin: 20px -30px;
 }
+
+.postPanel{
+    display: flex;
+}
