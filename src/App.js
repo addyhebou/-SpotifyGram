@@ -6,7 +6,6 @@ import Trending from "./components/Trending.js";
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "./DataLayer";
-// import { Router } from '@material-ui/icons';
 import {
   BrowserRouter as Router,
   Switch,
@@ -73,15 +72,6 @@ function App() {
       </div>
     </Router>
   );
-}
-{
-  // React-Router
-}
-{
-  // localhost.com
-}
-{
-  // localhost.com/trending
 }
 
 export default App;

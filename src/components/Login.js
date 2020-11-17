@@ -2,14 +2,6 @@ import React from 'react';
 import '../Login.css';
 import { loginUrl } from '../spotify';
 
-
-/*
-    1. Click LOGIN Button
-    2. Redirect to SPOTIFY login page
-    3. Redirect to homepage once logged in
-
-*/
-
 function Login() {
     return (
         <div className="login">

@@ -6,12 +6,7 @@ import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import SongRow from "../components/SongRow";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+
 
 
 function TrendingBody({ spotify }) {
@@ -24,7 +19,8 @@ function TrendingBody({ spotify }) {
                 <img src = {discover_weekly?.images[0].url} /* {user?.images[0]?.url} */ alt = ""/>
                 <div className = "body_infoText">
                     <strong>Trending</strong>
-                    <h2>TRENDING BOY</h2>
+                    <h2>Trending</h2>
+                    <p><strong>J. Cole </strong>Snow On Tha Bluff</p>
                     <p>{discover_weekly?.description}</p>
                 </div>
             </div>
