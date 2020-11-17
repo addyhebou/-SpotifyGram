@@ -23,7 +23,7 @@ function TrendingBody({ spotify }) {
             <div className = "body_info">
                 <img src = {discover_weekly?.images[0].url} /* {user?.images[0]?.url} */ alt = ""/>
                 <div className = "body_infoText">
-                    <strong>TRENDING</strong>
+                    <strong>Trending</strong>
                     <h2>TRENDING BOY</h2>
                     <p>{discover_weekly?.description}</p>
                 </div>

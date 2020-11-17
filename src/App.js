@@ -61,11 +61,11 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/home">
+          <Route exact path = "/">
             {token ? (<Player spotify={spotify}/>) : (<Login />)}
             {console.log("💜💜💜💜💜💜")}
           </Route>
-          <Route path = "/trending">
+          <Route exact path = "/trending">
             {token ? (<Trending spotify={spotify}/>) : (<Login />)}
             {console.log("💚💚💚💚💚")}
           </Route>
