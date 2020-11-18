@@ -35,6 +35,13 @@
     padding: 2px;
 }
 
+.plusIcon{
+    color: #c4c4c4;
+    font-size: 50px !important;
+    position: absolute;
+    right: 0;
+}
+
 
 
 .t_body::-webkit-scrollbar{
@@ -42,9 +49,11 @@
 }
 
 .t_body_info{
-    align-items: flex-end;
+    align-items: center;
     display: flex;
+    flex-direction: row;
     padding: 10px;
+    position: relative;
 }
 
 .t_body_info > img{

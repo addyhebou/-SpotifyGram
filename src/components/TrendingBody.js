@@ -8,6 +8,7 @@ import { useDataLayerValue } from '../DataLayer';
 import MusicElem from './MusicElem.tsx'
 import TrendingSidebar from './TrendingSidebar.tsx'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 function TrendingBody({ spotify }) {
     const [{ user, discover_weekly }, dispatch] = useDataLayerValue();
@@ -57,6 +58,7 @@ function TrendingBody({ spotify }) {
                                 <p><strong>J. Cole </strong>Snow On Tha Bluff</p>
                                 <MoreHorizIcon className = "moreOptionIcon"/>
                             </div>
+                            <AddCircleIcon className = "plusIcon"/>
                         </div>
                         <div className = "postPanel">
                             <Post profile = {profile1} name = "Fred Dalger" text = {text1}/>
