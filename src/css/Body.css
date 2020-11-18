@@ -30,7 +30,7 @@
 
 .body_infoText > h2{
     font-size: 48px;
-    margin-bottom: 10px;
+    -bottom: 10px;
 }
 
 .body_infoText > p{

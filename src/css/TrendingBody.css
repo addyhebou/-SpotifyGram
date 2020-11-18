@@ -1,0 +1,120 @@
+.t_body{
+    /* background: linear-gradient(rgb(33, 33, 33), rgba(0,0,0,1)); */
+    /* background-color: red; */
+    color: white;
+    flex: 0.8;
+    height: 100vh;
+    padding: 30px;
+    overflow-y: overlay;
+}
+.bigBody{
+    background: linear-gradient(rgb(33, 33, 33), rgba(0,0,0,1));
+    display: flex;
+    flex-direction: column;
+}
+.bigBody::-webkit-scrollbar{
+    display: none;
+}
+.flexBody{
+    display: flex;
+    flex-direction: row;
+}
+.flexBody::-webkit-scrollbar{
+    display: none;
+}
+.flexBody > body{
+    flex: 0.8;
+}
+.header{
+    margin: 30px;
+}
+
+.moreOptionIcon{
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+
+
+.t_body::-webkit-scrollbar{
+    display: none;
+}
+
+.t_body_info{
+    align-items: flex-end;
+    display: flex;
+    padding: 10px;
+}
+
+.t_body_info > img{
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+    height: 20vw;
+}
+
+.t_body_infoText{
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+.t_body_infoText > h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.t_body_infoText > p{
+    font-size: 14px;
+    margin: 30px;
+}
+
+.t_body_icons{
+    align-items: center;
+    display: flex;
+}
+
+.t_body_icons > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.t_body_shuffle{
+    font-size: 80px !important;
+    margin: 20px 0px 20px 50px;
+}
+
+.t_body_shuffle:hover{
+    transform: scale(1.08);
+    transition: 100ms transform ease-in;
+}
+
+.t_body_songs{
+    margin: 20px -30px;
+}
+
+.postPanel{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0px 30px; */
+}
+
+.songs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trendingPanel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.trendingSongs, .trendingPlaylists{
+    display: flex;
+    flex-direction: column;
+}
+

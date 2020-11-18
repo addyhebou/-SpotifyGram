@@ -1,0 +1,12 @@
+.elem{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.elem > img{
+    width: 200px;
+}
+
+.elem > p{
+    max-width: 200px;
+}

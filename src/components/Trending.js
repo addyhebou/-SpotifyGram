@@ -3,8 +3,8 @@ import Sidebar from './Sidebar';
 import Body from './Body.js';
 import TrendingBody from './TrendingBody.js';
 import Footer from './Footer.tsx';
-import "../Player.css";
-import "../Sidebar.css";
+import "../css/Player.css";
+import "../css/Sidebar.css";
 // import { Switch } from '@material-ui/core';
 import {
     BrowserRouter as Router,

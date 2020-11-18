@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './css/App.css';
 import Login from "./components/Login";
 import Player from "./components/Player";
 import Trending from "./components/Trending.js";
@@ -14,6 +14,38 @@ import {
 } from "react-router-dom";
 
 const spotify = new SpotifyWebApi();
+
+// const APIController = (function(){
+//   const clientId = '';
+//   const clientSecret = '';
+
+//   const _getToken = async () => {
+//     const result = await fetch('http://accounts.spotify.com/api/token', {
+//       method: 'POST',
+//       headers:{
+//         'Content-Type' : 'application/x-www-form-urlencoded',
+//         'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
+//       },
+//       body: 'grant_type=client_credentials'
+//     });
+
+//     const data = await result.json();
+//     return data.access_token;
+//   }
+// }
+
+// )();
+
+// const _getTrack = async (token, trackEndPoint)=>{
+//   const result = await fetch(`${trackEndPoint}`,{
+//     method: 'GET',
+//     headers:{ 'Authorization' : 'Bearer ' + token}
+//   });
+
+//   const data = await result.json();
+//   return data;
+// }
+
 
 function App() {
   // State is short term memory for handling variables

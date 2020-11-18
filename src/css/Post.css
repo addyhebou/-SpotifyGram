@@ -5,9 +5,15 @@
 .holder{
     background-color: #444444;
     border-radius: 25px;
+    margin:10px;
     padding: 9px;
-    width: 328px;
+    width: auto;
+    /* width: 328px; */
 }
+hr{
+    margin: 30px 0px;
+}
+
 
 .topline{
     display: flex;

@@ -1,0 +1,10 @@
+.hashtag{
+    color: #737373;
+    cursor: pointer;
+    margin: 10px;
+    transition: 200ms color ease-in;
+}
+
+.hashtag:hover{
+    color: #1db954;
+}

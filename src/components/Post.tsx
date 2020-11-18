@@ -3,7 +3,8 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
-import '../Post.css';
+import '../css/Post.css';
+import '../hashtagColor.tsx';
 
 function Post({ profile = "", name, date = "Jun 17", mediaUrl, text }: { profile: string, name: string, date: string, mediaUrl: string, text: string }) {
     let socialname = name.split(" ").join("").toLowerCase();
@@ -14,11 +15,11 @@ function Post({ profile = "", name, date = "Jun 17", mediaUrl, text }: { profile
                 <strong>{name}</strong>
                 <p>@{socialname} | {date}</p>
             </div>
-            <div className="text">
+            <div className="text" id = "text">
                 <p>{text}</p>
             </div>
             <div className="media">
-                <img src = {mediaUrl} alt = "Media Link"/>
+                <img src = {mediaUrl} alt = ""/>
             </div>
             <div className="bottomline">
                 <ChatBubbleOutlineIcon /><p>17</p>
