@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/-SpotifyGram/static/css/main.93c4cacd.chunk.css",
+    "main.js": "/-SpotifyGram/static/js/main.6050a008.chunk.js",
+    "main.js.map": "/-SpotifyGram/static/js/main.6050a008.chunk.js.map",
+    "runtime-main.js": "/-SpotifyGram/static/js/runtime-main.4797c7db.js",
+    "runtime-main.js.map": "/-SpotifyGram/static/js/runtime-main.4797c7db.js.map",
+    "static/css/2.be39f068.chunk.css": "/-SpotifyGram/static/css/2.be39f068.chunk.css",
+    "static/js/2.61e4d485.chunk.js": "/-SpotifyGram/static/js/2.61e4d485.chunk.js",
+    "static/js/2.61e4d485.chunk.js.map": "/-SpotifyGram/static/js/2.61e4d485.chunk.js.map",
+    "index.html": "/-SpotifyGram/index.html",
+    "precache-manifest.8baa8e1607388ebbf984b08c54eed35a.js": "/-SpotifyGram/precache-manifest.8baa8e1607388ebbf984b08c54eed35a.js",
+    "service-worker.js": "/-SpotifyGram/service-worker.js",
+    "static/css/2.be39f068.chunk.css.map": "/-SpotifyGram/static/css/2.be39f068.chunk.css.map",
+    "static/css/main.93c4cacd.chunk.css.map": "/-SpotifyGram/static/css/main.93c4cacd.chunk.css.map",
+    "static/js/2.61e4d485.chunk.js.LICENSE.txt": "/-SpotifyGram/static/js/2.61e4d485.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/-SpotifyGram/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4797c7db.js",
+    "static/css/2.be39f068.chunk.css",
+    "static/js/2.61e4d485.chunk.js",
+    "static/css/main.93c4cacd.chunk.css",
+    "static/js/main.6050a008.chunk.js"
+  ]
+}
