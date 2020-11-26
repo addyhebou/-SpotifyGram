@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://addyhebou.github.io/-SpotifyGram",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -18,12 +19,13 @@
     "semantic-ui-react": "^2.0.1",
     "spotify-web-api-js": "^1.5.0"
   },
-  "homepage": "https://localhost:3000/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "typescript": "^4.0.3"
   }
 }
