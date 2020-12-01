@@ -6,7 +6,7 @@ import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import '../css/Post.css';
 import '../hashtagColor.tsx';
 
-function Post({ profile = "", name, date = "Jun 17", mediaUrl, text }: { profile: string, name: string, date: string, mediaUrl: string, text: string }) {
+function Post({ profile = "", name, date = "Jun 17", mediaUrl, text }: { profile: string, name: string, date: string | null, mediaUrl: string, text: string | null }) {
     let socialname = name.split(" ").join("").toLowerCase();
     return (
         <div className="holder">
