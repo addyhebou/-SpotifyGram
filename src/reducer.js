@@ -1,4 +1,5 @@
 // Comment to add new commit
+// 2nd Comment to add new commit
 export const initialState = {
     user: null,
     playlists: [],
@@ -6,6 +7,7 @@ export const initialState = {
     item: null,
     // token: "BQALCt34Mp8sG9VugAPPHnKLyxq_cn8P4sc13JeuPOAMFOdZM_SYXw1XQCwErtIf7MPwMUcZYlASx8KszcWKnYcPVmHrPsxgab6NH2wP1z8AIjFCsfoABv_aDu9So1jfDw",
 };
+
 
 const reducer = (state, action) =>{ // state is the status of user, playlists, etc. action is changing one of those items
     console.log(action); 
